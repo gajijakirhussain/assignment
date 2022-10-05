@@ -1,0 +1,199 @@
+<!-- // Assignment-6 atart -->
+<!DOCTYPE html>
+<html lang="en">
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.potashnews.bd.com</title>
+    <!-- font-awesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-light">
+
+    <!-- header section start -->
+    <header class="container">
+        <section>
+            <nav class="navbar navbar-expand-lg navbar-light py-4">
+                <div class="container-fluid">
+                    <!-- collapse   -->
+                    <div class="navbar-collapse d-flex justify-content-between" id="navbarText">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flexjustify-content-sm-between">
+                            <li class="nav-item">
+                                <button class="btn btn-primary fs-5" type="button">Click</button>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-center fs-5 text-primary" href=" #">News</a>
+                            </li>
+                        </ul>
+                        <span class="navbar-text right-menu d-block">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 position-relative">
+                                <li class="nav-item text-center">
+                                    <a class="nav-link active text-primary text-center" aria-current="page"
+                                        href="#">News</a>
+                                    <span class="span-border"></span>
+                                </li>
+                                <li class="nav-item">
+                                    <a id="blog-ns" class="nav-link" href="#">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <img class="jakir-img" src="img/jakir.jpg" alt="">
+                                </li>
+                            </ul>
+                        </span>
+                    </div>
+                </div>
+            </nav>
+            <hr class="top-hr border-bottom border-2">
+        </section>
+        <!-- Blog section start -->
+        <section>
+            <div style="width: 100%; position: relative;" id="blog-popobar" class=" d-none border px-4 mb-3 py-3">
+                <h2 class="text-center">What is the difference between var let const ?</h2>
+                <p>The differences between var, let, and const variable declaration in JavaScript include:
+                    Variables declared with var and const are scoped to the immediate function body.
+                    Variables declared with the var keyword are hoisted. Hoisting means that the variable can be
+                    accessed in their enclosing scope even before they are declared.
+                    Variables declared with the let keyword are block-scoped, which means the variables will have scope
+                    to the immediate enclosing block.</p>
+                <h2 class="text-center">What is the difference between arrow function and regular function?</h2>
+                <p>Regular functions created using function declarations or expressions are constructible and callable.
+                    Since regular functions are constructible, they can be called using the new keyword. However, the
+                    arrow functions are only callable and not constructible, i.e arrow functions can never be used as
+                    constructor functions.</p>
+                <h2 class="text-center">What is the difference between fetch forEach filter find?</h2>
+                <p>
+                    The main difference between forEach and filter is that forEach just loop over the array and executes
+                    the callback but filter executes the callback and check its return value.</p>
+            </div>
+        </section>
+        <!-- News cetagory section start -->
+        <section>
+            <div id="cetagories">
+
+            </div>
+        </section>
+
+    </header>
+    <!-- header section end -->
+
+
+    <!-- main section start start -->
+    <main>
+        <section class="container">
+            <div style="height: 70px;" id="length" class="bg-white ">
+
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg  bg-light">
+                    <div class="container-fluid">
+                        <div class="navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+                                style="--bs-scroll-height: 100px;">
+
+                                <li class="nav-item dropdown d-flex justify-content-between">
+                                    <span class="fs-4">Sort By View</span>
+
+                                    <select id="select-btn"
+                                        class="form-select dropdown-toggle bg-white px-5 fs-5 w-50 text-center"
+                                        data-bs-toggle="dropdown">
+                                        <option class="" selected>Select</option>
+                                        <option value="1">Defolt</option>
+                                        <option value="2">Folse</option>
+                                    </select>
+                                </li>
+                            </ul>
+                            <form class="d-flex justify-content-between ps30-btn" role="">
+                                <div class="position-relative ps30-btn">
+                                    <button class="btn btn-ligh border border-primary pr-3 fs-5 " type="submit">Today's
+                                        Pick</button>
+                                </div>
+                                <div class="">
+                                    <button class="btn btn-primary fs-5" type="submit">Trending</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </section>
+
+        <!-- News cetagory section start -->
+        <section class="container">
+            <div id="allNewsContainer" class="d-flex justify-content-between flex-wrap">
+
+            </div>
+        </section>
+        <!-- News cetagory section end -->
+
+        <!-- News details section start -->
+        <section>
+            <div id="newsDetails" class="container">
+
+            </div>
+        </section>
+        <!-- News details section end -->
+
+        <!-- Mpdal -->
+        <section>
+            <!-- Button trigger modal -->
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="newsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">what is a nodelist in javascript?</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            A NodeList is a collection of document nodes (element nodes, attribute nodes, and text
+                            nodes). HTMLCollection items can be accessed by their name, id, or index number. NodeList
+                            items can only be accessed by their index number. An HTMLCollection is always a live
+                            collection.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Loader Spinner -->
+        <section id="loader" class="d-none">
+            <div style="height: 400px;" class="d-flex justify-content-center text-success align-items-center">
+                <div class="spinner-border" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- main section end -->
+
+    <!-- javascript link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="js/apps.js"></script>
+</body>
+
+</html>
+
+<!-- // Assignment-6 end -->
